@@ -12,7 +12,7 @@ pipeline {
 
     stage('Checkout Source') {
       steps {
-        git url:'https://github.com/Muhammad-Imtiaz/k8s-jenkins.git', branch:'master'
+        git url:'https://github.com/usmanhidral/k8s-jenikns-python.git', branch:'master'
       }
     }
     
