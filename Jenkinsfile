@@ -15,6 +15,10 @@ pipeline {
         git url:'https://github.com/usmanhidral/k8s-jenikns-python.git', branch:'master'
       }
     }
+    stage('Initialize'){
+        def dockerHome = tool 'myDocker'
+        env.PATH = "${dockerHome}/bin:${env.PATH}"
+    }
     
     stage('Build') {
 
